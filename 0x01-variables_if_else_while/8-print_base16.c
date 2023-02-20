@@ -8,6 +8,7 @@ int main(void)
 {
 	int i;
 	char hex;
+	
 	for (i = 0; i <= 9; i++)
 	{
 		putchar(i + '0');
