@@ -4,9 +4,7 @@
  */
 int _islower(int c)
 {
-	char cah;
-
-	if (cah >= 'a' && cah <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
