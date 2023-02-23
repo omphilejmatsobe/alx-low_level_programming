@@ -12,7 +12,7 @@ int main(void)
 	int num;
 	unsigned long fibu1 = 0, fibu2 = 1, sum;
 
-	for (num = 0; num <=490; num++)
+	for (num = 0; num <=49; num++)
 	{
 		sum = fibu1 + fibu2;
 		printf("%lu", sum);
