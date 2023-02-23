@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _isalpha - checks if character is alphabet
- * Returns: 1 if alphabet otherwise 0
- *@c: is the integer value for the characters
-*/
+ *  _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ * Return: 1 if c is a letter, 0 otherwise
+ */
+
 int _isalpha(int c)
 {
 	if ( c >= 'a' && c <= 'z')
