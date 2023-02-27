@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * -putchar - prints a string, followed by a new line
+ * -puts - prints a string, followed by a new line
  *
  *  @str: input
  *  Return: str
