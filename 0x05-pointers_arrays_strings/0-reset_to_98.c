@@ -4,8 +4,7 @@
  *
  * Return: Always 0 (success)
  */
-void reset_to_98(int *p);
+void reset_to_98(int *p)
 {
-	*p = 98
-        return *p;
+	*p = 98;
 }
