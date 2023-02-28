@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _puts - prints a string, followed by a new line
- *  @str: return string
+ * print_rev - prints a string, followed by a new line
+ * @str: return string
+ * Return: 0
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
 	int i = 0;
 	int o;
