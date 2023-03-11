@@ -13,6 +13,6 @@ int main(int argc, char *argv[])
 
 	*argv = 0;
 	count = argc - 1;
-	printf("%d\n", count);	
+	printf("%d\n", count);
 	return (0);
 }
