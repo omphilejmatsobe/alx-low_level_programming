@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * main - prints its own opcodes
@@ -11,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int bytes, x
+	int bytes, i;
 	char *arr;
 
 	if (argc != 2)
@@ -30,14 +29,14 @@ int main(int argc, char *argv[])
 
 	arr = (char *)main;
 
-	for (x = 0; x < bytes; x++)
+	for (i = 0; i < bytes; i++)
 	{
-		if (x == bytes - 1)
+		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", arr[x]);
+			printf("%02hhx\n", arr[i]);
 			break;
 		}
-		printf("%02hhx ", arr[x]);
+		printf("%02hhx ", arr[i]);
 	}
 	return (0);
 }
