@@ -2,14 +2,14 @@
 
 /**
  * find_listint_loop - loop in a linked list
- * @head: linked list 
+ * @head: linked list
  *
  * Return: pointer node or NULL
  */
 listint_t *find_listint_loop(listint_t *head)
 {
- 	listint_t *x;
- 	listint_t *y;
+	listint_t *x;
+	listint_t *y;
 
 	x = head;
 	y = head;

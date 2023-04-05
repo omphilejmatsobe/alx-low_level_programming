@@ -2,15 +2,15 @@
 
 /**
  * free_listint_safe - frees a linked list
- * @h: pointer to node 
+ * @h: pointer to node
  *
  * Return: the freed list
  */
 size_t free_listint_safe(listint_t **h)
 {
 	size_t x;
- 	int dif;
- 	listint_t *rev;
+	int dif;
+	listint_t *rev;
 
 	x = 0;
 
@@ -22,15 +22,15 @@ size_t free_listint_safe(listint_t **h)
 		dif = *h - (*h)->next;
 		if (dif > 0)
 		{
-			temp = (*h)->next;
+			rev = (*h)->next;
 			free(*h);
 			*h = rev;
 			x++;
 		}
 		else
 		{
-			free(*h);	
-		      	*h = NULL;
+			free(*h);
+			*h = NULL;
 			x++;
 			break;
 		}
