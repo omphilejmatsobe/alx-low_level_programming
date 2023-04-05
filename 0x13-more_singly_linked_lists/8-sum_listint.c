@@ -17,7 +17,7 @@ int sum_listint(listint_t *head)
 	{
 		sum += t->n;
 		t = t->next;
- 	}
+	}
 
 	return (sum);
 }
