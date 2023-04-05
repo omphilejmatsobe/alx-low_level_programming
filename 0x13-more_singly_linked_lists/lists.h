@@ -8,17 +8,17 @@
 #include <string.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
+ * struct listint_s - singly linked list
+ * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ *
  */
 typedef struct listint_s
 {
-        int n;
-        struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 int _putchar(char c);
