@@ -4,7 +4,7 @@
  * insert_nodeint_at_index - inserts a new node in a linked list
  * @head: pointer to node
  * @idx: index of node
- * @n: data 
+ * @n: data
  *
  * Return: pointer to node
  */
@@ -15,7 +15,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *rev = *head;
 
 	point = malloc(sizeof(listint_t));
-	
+
 	if ((point == NULL) || (head == NULL))
 		return (NULL);
 
