@@ -2,13 +2,14 @@
 /**
  *_print_rev_recursion - prints strings in reverse order
  *
- *@s: input string
+ *@s: input pointer to string
  */
 void _print_rev_recursion(char *s)
 {
 	if (*s)
 	{
-		_print_rev_recursion(s++);
+		s = s + 1;
+		_print_rev_recursion(s);
 		_putchar(*s);
 	}
 }
