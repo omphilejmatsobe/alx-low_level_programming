@@ -13,3 +13,4 @@ int wildcmp(char *s1, char *s2);
 
 /* added functions */
 int recursion(int n, int i);
+int prime(int n, int i);
