@@ -1,10 +1,10 @@
-#include "main.h"		
+#include "main.h"
 /**
- * create_array - creates an array 
- * @size: input size of pointer 
- * @c: input char 
- * Return: pointer		
- */		
+ * create_array - creates an array
+ * @size: input size of pointer
+ * @c: input char
+ * Return: pointer
+ */
 
 char *create_array(unsigned int size, char c)
 {
@@ -12,6 +12,9 @@ char *create_array(unsigned int size, char c)
 	char *arr;
 
 	arr = malloc(sizeof(char) * size);
+
+	if ( arr == NULL && arr != 0)
+                return (NULL);
 
 	if ( arr == NULL || arr != 0)
 		return (NULL);
