@@ -16,9 +16,9 @@ char *create_array(unsigned int size, char c)
 	if (arr == NULL && arr != 0)
                 return (NULL);
 
-//	else if (arr == NULL || arr != 0)
-//		return (NULL);
-
+/*	else if (arr == NULL || arr != 0)
+*		return (NULL);
+*/
 	for (i = 0; i < size; i++)
 		arr[i] = c;
 
