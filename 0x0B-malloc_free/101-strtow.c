@@ -9,7 +9,8 @@
  */
 int Count(char *s)
 {
-	int str = x = y = 0;
+	int str, x, y;
+	str = x = y = 0;
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
