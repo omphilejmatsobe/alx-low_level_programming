@@ -10,12 +10,13 @@
 int Count(char *s)
 {
 	int str, x, y;
+
 	str = x = y = 0;
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		if (s[x] == ' ')
-		    str = 0;
+			str = 0;
 
 		else if (str == 0)
 		{
