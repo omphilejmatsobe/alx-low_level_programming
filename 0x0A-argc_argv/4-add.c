@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <main.h>
 /**
  * main - prints all arguments received.
@@ -31,3 +32,6 @@ int main(int argc, char *argv[])
 	printf("%d\n", add);
 	return (0);
 }
+=======
+
+>>>>>>> 754154e7ccde2f6f52519cae85ad5eb813b28c46
