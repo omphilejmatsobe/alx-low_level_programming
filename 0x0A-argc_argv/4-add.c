@@ -14,15 +14,19 @@ int main(int argc, char *argv[])
 
 	result = 0;
 
+	(void)argv;
 	for (x = 1; x < argc ; x++)
 	{
-		r = strtol(argv[x], NULL, 10);
+		int y;
+		r = atoi(argv[x]);
 
-		if (r <= 0 || atoi(argv[x]) < 0)
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			printf("Error\n");
-			return (1);
-
+			if (isdigit(argv[x][y]) <= 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 
 		if (atoi(argv[x]) > 0)
