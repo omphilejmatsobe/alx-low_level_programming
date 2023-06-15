@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		r = strtol(argv[x], NULL, 10);
 
-		if (r == 0)
+		if (r <= 0 || atoi(argv[x]) < 0)
 		{
 			printf("Error\n");
 			return (1);
