@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-#include <main.h>
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 /**
  * main - prints all arguments received.
  * @argc: type int argument
@@ -8,30 +10,27 @@
  */
 int main(int argc, char *argv[])
 {
-	int x;
-	int y;
-	int add;
+	int x, result, r;
 
-	(void)argv;
-	add = 0;
-	if (argc > 1)
+	result = 0;
+
+	for (x = 1; x < argc ; x++)
 	{
-		for (x = 1; x < argc; x++)
+		r = strtol(argv[x], NULL, 10);
+
+		if (r == 0)
 		{
-			for (y = 0; argv[x][y] != '\0'; y++)
-			{
-				if (!isdigit(argv[x][y]))
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-			add += atoi(argv[x]);
+			printf("Error\n");
+			return (1);
+
+		}
+
+		if (atoi(argv[x]) > 0)
+		{
+			result += r;
 		}
 	}
-	printf("%d\n", add);
+
+	printf("%d\n", result);
 	return (0);
 }
-=======
-
->>>>>>> 754154e7ccde2f6f52519cae85ad5eb813b28c46
