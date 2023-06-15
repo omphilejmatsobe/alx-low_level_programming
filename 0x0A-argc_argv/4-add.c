@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 	for (x = 1; x < argc ; x++)
 	{
 		int y;
+
 		r = atoi(argv[x]);
 
 		for (y = 0; argv[x][y] != '\0'; y++)
