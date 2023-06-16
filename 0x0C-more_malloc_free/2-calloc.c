@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
- * _calloc - function that allocates memory for an array, using malloc
- * @nmemb: type unsigned int
- * @size: type unsigned int size of elements
+ * _calloc - allocates memory for an array,using malloc
+ * @nmemb: input unsigned int
+ * @size: input unsigned int size
  * Return: NULL
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -15,9 +12,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int x;
 
 	if (nmemb <= 0 || size <= 0)
-		return (str);
+		return (NULL);
 
-	arr = malloc(nmemb * size);
+	str = malloc(nmemb * size);
 	if (str == 0)
 		return (NULL);
 	arr = (char *)str;
