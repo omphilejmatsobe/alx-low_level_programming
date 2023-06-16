@@ -3,7 +3,7 @@
  * main - prints all arguments received.
  * @argc: input int argument
  * @argv: input char rgument of string.
- * Return: 0 if success, if not 1
+ * Return: 0 if success, if not 2
  */
 int main(int argc, char *argv[])
 {
