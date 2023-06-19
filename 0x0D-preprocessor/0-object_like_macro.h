@@ -1,3 +1,3 @@
 #include <stdlib.h>
-#include <stdio.hi>
+#include <stdio.h>
 #define SIZE 1024
