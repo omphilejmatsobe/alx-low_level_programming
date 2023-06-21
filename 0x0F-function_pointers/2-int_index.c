@@ -6,7 +6,7 @@
  * @array: input int array pointer
  * @size: input pointer size of the array
  * @cmp: input pointer to the funct
- * Return: return -1 if size <=0 
+ * Return: return -1 if size <=0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
