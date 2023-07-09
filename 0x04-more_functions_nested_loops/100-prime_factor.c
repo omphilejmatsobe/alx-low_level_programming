@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * main - finds the prime factore of a number
  *
@@ -18,10 +19,12 @@ int main(void)
  */
 void find_prime(long num)
 {
-	long x, i, result;
+	long x, i, result, root;
 	int check;
 
-	for (x = 1; x <= (num / 2) ; x++)
+	root = sqrt(num);
+
+	for (x = 1; x < root ; x++)
 	{
 		if ((num % x) == 0)
 		{
@@ -32,12 +35,12 @@ void find_prime(long num)
 				if (x % i == 0)
 				{
 					check++;
-				}
-			}
 
-			if (check == 1)
-			{
-				result = x;
+					if ( x == i && check == 1)
+					{
+						result = x;
+					}
+				}
 			}
 		}
 	}
