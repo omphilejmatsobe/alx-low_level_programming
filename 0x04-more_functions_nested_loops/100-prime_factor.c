@@ -11,7 +11,6 @@ int main(void)
 
 	return (0);
 }
-
 /**
  * find_prime - finds largets prime factor
  *
@@ -19,28 +18,27 @@ int main(void)
  */
 void find_prime(long num)
 {
-	long x, i, result, root;
+	long x, i, result;
 	int check;
 
-	root = sqrt(num);
 
-	for (x = 1; x < root ; x++)
+	for (x = 1; x < sqrt(num) * 100; x++)
 	{
-		if ((num % x) == 0)
+		if (num % x == 0)
 		{
 			check = 0;
 
-			for (i = 2; i <= x; i++)
+			for (i = 1; i < x; i++)
 			{
 				if (x % i == 0)
 				{
 					check++;
-
-					if ( x == i && check == 1)
-					{
-						result = x;
-					}
 				}
+			}
+
+			if (check == 1)
+			{
+				result = x;
 			}
 		}
 	}
