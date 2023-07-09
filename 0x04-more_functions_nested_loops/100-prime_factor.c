@@ -1,7 +1,7 @@
 #include "main.h"
-/*
+/**
  * main - finds the prime factore of a number
- * find_prime - hello
+ *
  * Return: 0 if success
  */
 int main(void)
@@ -21,13 +21,13 @@ void find_prime(long num)
 	long x, i, result;
 	int check;
 
-	for (x = 1; x <= ((num + 1) / 2) ; x++)
+	for (x = 1; x <= (num / 2) ; x++)
 	{
-		if (num % x == 0)
+		if ((num % x) == 0)
 		{
 			check = 0;
 
-			for (i = 1; i <= x; i++)
+			for (i = 2; i <= x; i++)
 			{
 				if (x % i == 0)
 				{
