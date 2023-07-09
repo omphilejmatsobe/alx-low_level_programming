@@ -22,7 +22,7 @@ void find_prime(long num)
 	int check;
 
 
-	for (x = 1; x < sqrt(num) * 100; x++)
+	for (x = 1; x < num ; x++)
 	{
 		if (num % x == 0)
 		{
