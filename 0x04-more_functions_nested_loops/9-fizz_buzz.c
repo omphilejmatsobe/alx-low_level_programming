@@ -1,10 +1,22 @@
 #include "main.h"
+#include <stdlib.h>
+
 /**
  * main - prints FizzBuzz challenge
  *
- * Return: 0 if succes 
+ * Return: 0 if succes
  */
 int main(void)
+{
+	fizz();
+
+	return (0);
+}
+
+/**
+ * fizz - prints FizzBuzz challenge
+ */
+void fizz(void)
 {
 	int i;
 
@@ -19,9 +31,9 @@ int main(void)
 		else
 			printf("%d", i);
 
-		printf(" ");
+		if (i < 100)
+			printf(" ");
 	}
 
-	putchar('\n');
-	return(0);
+	printf("\n");
 }
