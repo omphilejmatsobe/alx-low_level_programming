@@ -16,5 +16,6 @@ void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
 void fizz(void);
+void find_prime(long num);
 #endif
 
