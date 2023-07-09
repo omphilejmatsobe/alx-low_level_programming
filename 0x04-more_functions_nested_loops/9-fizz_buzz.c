@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - 
+ * main - prints FizzBuzz challenge
+ *
+ * Return: 0 if succes 
  */
 int main(void)
 {
@@ -17,7 +19,9 @@ int main(void)
 		else
 			printf("%d", i);
 
-		putchar('\n');
+		printf(" ");
 	}
+
+	putchar('\n');
 	return(0);
 }
