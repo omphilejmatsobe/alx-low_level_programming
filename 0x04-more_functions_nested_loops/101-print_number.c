@@ -18,7 +18,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	if ( c == 0)
+	if (c == 0)
 	{
 		ctr = 1;
 	}
@@ -29,14 +29,14 @@ void print_number(int n)
 	}
 
 
-	for ( x = 0; x < ctr; x++)
+	for (x = 0; x < ctr; x++)
 	{
 		pwr = 1;
 		for (i = 1; i < ctr - x; i++)
 		{
 			pwr = pwr * 10;
 		}
-		
+
 		num = n % pwr;
 		_int = (n - num) / pwr;
 		n = num;
