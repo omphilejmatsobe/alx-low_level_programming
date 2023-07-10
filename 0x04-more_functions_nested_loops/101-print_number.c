@@ -1,26 +1,46 @@
 #include "main.h"
+#include <math.h>
+#include <stdlib.h>
 /**
- * print_number - prints an integer
- * @n: integer to be printed
+ * print_number - prints int with putchar
+ * @n: int to be printed
  */
 void print_number(int n)
 {
-	unsigned int n1;
+	int x, num, _int, pwr, i;
+	int c, ctr = 0;
+
+	c = n;
 
 	if (n < 0)
 	{
-		n1 = -n;
+		n = n * (-1);
 		_putchar('-');
 	}
-	else
+
+	if ( c == 0)
 	{
-		n1 = n;
+		ctr = 1;
+	}
+	while (c != 0)
+	{
+		c = c / 10;
+		ctr++;
 	}
 
-	if (n1 / 10)
-	{
-		print_number(n1 / 10);
-	}
 
-	_putchar((n1 % 10) + '0');
+	for ( x = 0; x < ctr; x++)
+	{
+		pwr = 1;
+		for (i = 1; i < ctr - x; i++)
+		{
+			pwr = pwr * 10;
+		}
+		
+		num = n % pwr;
+		_int = (n - num) / pwr;
+		n = num;
+
+		_putchar(48 + _int);
+	}
 }
