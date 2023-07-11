@@ -1,1 +1,1 @@
-This is a readme for the pointers_arrays_strings file.
+This is a readme for the pointers and string file.

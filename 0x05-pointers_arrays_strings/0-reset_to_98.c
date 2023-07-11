@@ -1,9 +1,9 @@
 #include "main.h"
+
 /**
- * reset_to_98 - takes a pointer to an int as parameter and updates the value
+ * reset_to_98 - assignes value to the argument
  *
- * @n: input
- * Return: n
+ * @n: input int argument
  */
 void reset_to_98(int *n)
 {
