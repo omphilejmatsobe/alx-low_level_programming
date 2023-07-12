@@ -6,28 +6,28 @@
  */
 void rev_string(char *s)
 {
-        int i;
+	int i;
 	int *p;
 
-        i = 0;
+	i = 0;
 
-        while (*s != '\0')
-        {
+	while (*s != '\0')
+	{
 		*p = *s;
-                p++;
+		p++;
 		s++;
-                i++;
-        }
+		i++;
+	}
 
 	i--;
-        s--;
+	s--;
 	p--;
 
-        while (*s != '\0' && i >= 0)
-        {
-                s--;
-                i--;
-        }
+	while (*s != '\0' && i >= 0)
+	{
+		s--;
+		i--;
+	}
 
 	s++;
 	i++;
