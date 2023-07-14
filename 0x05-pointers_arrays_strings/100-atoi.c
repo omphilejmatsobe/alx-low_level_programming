@@ -22,7 +22,7 @@ int _atoi(char *s)
 			hasDigits = isDigit = true;
 			digCount++;
 			firstDig = i - digCount + 1;
-			if (s[firstDig - 1] == 45 && (s[firstDig - 2] == 20 || s[firstDig - 2] == 0 ))
+			if (s[firstDig - 1] == 45)
 				sign = (-1);
 			else
 				sign = 1;
