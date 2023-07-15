@@ -1,30 +1,28 @@
 #include "main.h"
 /**
  * _strcat - concatenates two strings
- * @dest: Input
- * @src: input
+ * @src: the input string to be copied
+ * @dest: the input string to be joined
  *
- * Return: void
+ * Return: dest if succesful if not 0.
  */
 char *_strcat(char *dest, char *src)
 {
-	int x;
-	int y;
+	int destCount, i;
 
-	x = 0;
-	while (dest[x] != '\0')
+	destCount = i = 0;
+
+	while (dest[destCount] != '\0')
 	{
-		x++;
-	}
-	y = 0;
-	while (src[y] != '\0')
-	{
-		dest[x] = src[y];
-		x++;
-		y++;
+		destCount++;
 	}
 
-	dest[x] = '\0';
+	while (src[i] != '\0')
+	{
+		dest[destCount + i] = src[i]; 
+		i++;
+	}
+
+
 	return (dest);
 }
-
