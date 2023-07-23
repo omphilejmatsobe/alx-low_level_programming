@@ -17,8 +17,8 @@ char *cap_string(char *a)
 
 		for (i = 0; d[i] != '\0'; i++)
 		{
-
-			if ((a[x - 1] == d[i]) && ((a[x] >= 65 && a[x] <= 90) || (a[x] >= 97 && a[x] <= 122)))
+			if ((a[x - 1] == d[i]) && ((a[x] >= 65 && a[x] <= 90) ||
+						(a[x] >= 97 && a[x] <= 122)))
 			{
 				state = 1;
 				break;
@@ -37,5 +37,5 @@ char *cap_string(char *a)
 			}
 		}
 	}
-        return (a);
+	return (a);
 }
