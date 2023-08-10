@@ -19,7 +19,7 @@
 13. [0x12](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x12-singly_linked_lists) - Singly Linked Lists
 14. [0x13]() -
 15. [0x14](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x14-bit_manipulation) - Bit manipulation
-16. [0x15](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x15-file_io) -
+16. [0x15](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x15-file_io) - File io
 17. [0x0A](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x0A-argc_argv) - Argc and argv
 18. [0x0B](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x0B-malloc_free) - Malloc and free
 19. [0x0C](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x0C-more_malloc_free) - More malloc and free
