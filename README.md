@@ -14,7 +14,7 @@
 8. [0x07](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x07-pointers_arrays_strings) - Even more pointers, arrays and strings
 9. [0x08](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x08-recursion) - Recursion
 10. [0x09](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x09-static_libraries) - Static libraries
-11. [0x10](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x10-variadic_functions) - 
+11. [0x10](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x10-variadic_functions) - Variadic functions 
 12. [0x11]() -
 13. [0x12](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x12-singly_linked_lists) - Singly Linked Lists
 14. [0x13]() -
