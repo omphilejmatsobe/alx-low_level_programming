@@ -12,5 +12,6 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 
 /* added functions */
-int recursion(int n, int i);
-int prime(int n, int i);
+int _root(int x, int y);
+int _check_prime(float n, float i);
+int _palindrome(char *s, int count);

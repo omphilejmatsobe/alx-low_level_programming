@@ -1,31 +1,31 @@
 #include "main.h"
 /**
- * is_prime_number - checks if prime number
+ * is_prime_number - return 1 if the input is a prime
+ * @n: input int
  *
- * @n: input number
- * Return: 1 if is a prime number and 0 if not prime number
+ * Return: 1 if prime, else return 0
  */
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-	return (prime(n, n - 1));
-}
+	float i = 2;
 
+	if ( n <= 1)
+		return (0);
+
+	return (_check_prime(n, i));
+}
 /**
- * prime - checks prime
  *
- * @n: input number
- * @i: input
- * Return: 1 if n is prime 0 if not
+ *
+ *
  */
-int prime(int n, int i)
+int _check_prime(float x, float y)
 {
-	if (i == 1)
-		return (1);
-	if ((n % i) == 0 && (i > 0))
+	if ((x / y) - (int)(x / y) == 0)
 		return (0);
+	
+	if (y > (x / 2))
+		return (1);
 
-	return (prime(n, i - 1));
+	return (_check_prime(x, y + 1));
 }
-
