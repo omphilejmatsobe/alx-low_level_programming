@@ -12,13 +12,13 @@ int is_palindrome(char *s)
 
 	count = 0;
 
+	if (s[0] == '\0')
+		return (1);
+
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		count++;
 	}
-
-	if (count == 0)
-		return (1);
 
 	return (_palindrome(s, count - 1));
 }
