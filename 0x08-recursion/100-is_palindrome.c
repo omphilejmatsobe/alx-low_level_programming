@@ -17,17 +17,17 @@ int is_palindrome(char *s)
 		count++;
 	}
 
-	return (_palindrome (s, count - 1));
+	return (_palindrome(s, count - 1));
 }
-
 /**
+ * _palindrome - checks if theres a palindrome
+ * @s: input string
+ * @count: string size
  *
- *
- *
- *
+ * Return: 1 if palindrome and 0 if not
  */
 int _palindrome(char *s, int count)
-{	
+{
 	if (s[0] != '\0' && s[count] != '\0')
 	{
 		if (s[0] != s[count])
