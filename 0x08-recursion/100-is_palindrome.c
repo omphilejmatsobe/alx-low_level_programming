@@ -41,5 +41,5 @@ int _palindrome(char *s, int count)
 		}
 	}
 
-	return (1 * _palindrome(s + 1, count - 2 ));
+	return (1 * _palindrome(s + 1, count - 2));
 }
