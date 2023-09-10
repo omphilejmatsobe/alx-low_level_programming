@@ -3,7 +3,7 @@
  * is_palindrome -  indicates if a string is a palindrome or not
  * @s: input string
  *
- * Return: 1 if palindrom and 0 if not
+ * Return: 1 if palindrome and 0 if not
  */
 int is_palindrome(char *s)
 {
@@ -20,28 +20,19 @@ int is_palindrome(char *s)
 		count++;
 	}
 
-	return (_palindrome(s, count - 1));
-}
-/**
- * _palindrome - checks if theres a palindrome
- * @s: input string
- * @count: string size
- *
- * Return: 1 if palindrome and 0 if not
- */
-int _palindrome(char *s, int count)
-{
+	count--;
+
 	if (s[0] != '\0' && s[count] != '\0')
-	{
-		if (s[0] != s[count])
-			return (0);
+        {
+                if (s[0] != s[count])
+                        return (0);
 
-		if (s[1] == '\0')
-		{
-			if (s[0] == s[count])
-				return (1);
-		}
-	}
+                if (s[1] == '\0')
+                {
+                        if (s[0] == s[count])
+                                return (1);
+                }
+        }
 
-	return (1 * _palindrome(s + 1, count - 2));
+        return (1 * is_palindrome(s + 1));
 }
