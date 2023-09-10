@@ -17,6 +17,9 @@ int is_palindrome(char *s)
 		count++;
 	}
 
+	if (count == 0)
+		return 1;
+
 	return (_palindrome(s, count - 1));
 }
 /**
