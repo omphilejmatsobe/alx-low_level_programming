@@ -63,7 +63,7 @@ It is used to create system software that directly interacts with the hardware d
 
 ### Try It On Your Machine computer:	
 ```bash
-git clone https://github.com/edward0rtiz/holbertonschool-low_level_programming.git
-cd 0x00-hello_world
+git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
+cd 0x01-variables_if_else_while
 gcc -Wall FILENAME.c
 ```
