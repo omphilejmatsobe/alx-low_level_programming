@@ -1,5 +1,15 @@
 ##1()\|\| 13\|31 |*12()6124/\/\/\/\||\|6
 
+# Low Level Programming
+
+Let's learn C. This is the first step to learning the awesome C programming language.
+
+## Introduction
+
+C is a general-purpose low-level programming language created in the 1970s by Dennis Ritchie.
+It is used to create system software that directly interacts with the hardware devices, drivers, kernels, OS, databases, compilers etc.
+
+
 ## General
 * Cisfun
 
