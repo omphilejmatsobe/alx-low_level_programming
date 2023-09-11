@@ -37,5 +37,19 @@ It is used to create system software that directly interacts with the hardware d
 21. [0x0E](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x0E-structures_typedef) - Structures and typedef
 22. [0x0F](https://github.com/omphilejmatsobe/alx-low_level_programming/tree/master/0x0F-function_pointers) - Function pointers
 
+## Additional info :construction:
+### Resources
+
+- GLIBC 2.24
+- gcc 4.8.4
+- betty linter 0.32
+
+
+### Try It On Your Machine computer:	
+```bash
+git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
+gcc -Wall FILENAME.c
+```
+
 ## Author:
 Omphile Matsobe
