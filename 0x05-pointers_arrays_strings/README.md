@@ -1,4 +1,4 @@
-# 0x04 - More functions nested loop 📝
+# 0x05-pointers_arrays_strings 📝
 
 Let's learn C. This is the first step to learning the awesome C programming language.
 
@@ -17,19 +17,18 @@ It is used to create system software that directly interacts with the hardware d
   
 ## Tasks :heavy_check_mark:
 
-0. Function that checks for uppercase character.
-1. Function that checks for a digit (0 through 9).
-2. Function that multiplies two integers.
-3. Function that prints the numbers, from 0 to 9, followed by a new line.
-4. Function that prints the numbers, from 0 to 9, followed by a new line.
-5. Function that prints 10 times the numbers, from 0 to 14.
-6. Function that draws a straight line in the terminal.
-7. Function that draws a diagonal line on the terminal.
-8. Function that prints a square.
-9. Prints the numbers from 1 to 100.
-10. Function that prints a triangle.
-11. Program that finds and prints the largest prime factor of the number 612852475143.
-12. Function that prints an integer.
+0. Function that takes a pointer to an int as parameter and updates the value it points to to 98.
+1. Function that swaps the values of two integers.
+2. Function that returns the length of a string.
+3. Function that prints a string, followed by a new line, to stdout.
+4. Function that prints a string, in reverse.
+5. Function that reverses a string.
+6. Function that prints every other character of a string, starting with the first character.
+7. Function that prints half of a string.
+8. Function that prints n elements of an array of integers.
+9. Function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+10. Function that convert a string to an integer.
+11. Program that generates random valid passwords for the program 101-crackme
 
 ## Results :chart_with_upwards_trend:
 
