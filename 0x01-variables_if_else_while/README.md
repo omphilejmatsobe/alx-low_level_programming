@@ -27,29 +27,31 @@ It is used to create system software that directly interacts with the hardware d
   
 ## Tasks :heavy_check_mark:
 
-0. Script that runs a C file through the preprocessor and save the result into another file.
-1. Script that compiles a C file but does not link.
-2. Script that generates the assembly code of a C code and save it in an output file.
-3. Script that compiles a C file and creates an executable named cisfun.
-4. C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-5. C program that prints exactly with proper grammar, but the outcome is a piece of art, followed by a new line.
-6. C program that prints the size of various types on the computer it is compiled and run on.
-7. Script that generates the assembly code (Intel syntax) of a C code and saves it in an output file.
-8. C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line.
+0. Program that assigns a random number to the variable n each time it is executed
+1. Program that assigns a random number to the variable n each time it is executed.
+2. Program that prints the alphabet in lowercase.
+3. Program that prints the alphabet in lowercase, and then in uppercase.
+4. Program that prints the alphabet in lowercase.
+5. Program that prints all single digit numbers of base 10 starting from 0.
+6. Program that prints all single digit numbers of base 10 starting from 0.
+7. Program that prints the lowercase alphabet in reverse.
+8. Program that prints all the numbers of base 16 in lowercase.
+9. Program that prints all possible combinations of single-digit numbers.
 
 ## Results :chart_with_upwards_trend:
 
 | Filename |
 | ------ |
-| [0-preprocessor](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)|
-| [1-compiler](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler)|
-| [2-assembler](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/2-assembler)|
-| [3-name](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/3-name)|
-| [4-puts.c](https://github.com//omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/4-puts.c)|
-| [5-printf.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/5-printf.c)|
-| [6-size.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c)|
-| [100-intel](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/master/0x00-hello_world/100-intel)|
-| [101-quote.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c)|
+| [0-positive_or_negative.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c)|
+| [1-last_digit.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/1-last_digit.c)|
+| [2-print_alphabet.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c)|
+| [3-print_alphabets.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c)|
+| [4-print-alphabt.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/4-print-alphabt.c)|
+| [5-print_numbers.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/5-print_numbers.c)|
+| [6-print_numberz.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/6-print_numberz.c)|
+| [7-print_tebahpla.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/7-print_tebahpla.c)|
+| [8-print_base16.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/8-print_base16.c)|
+| [9-print_comb.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x01-variables_if_else_while/9-print_comb.c)|
 
 ## Additional info :construction:
 ### Resources
