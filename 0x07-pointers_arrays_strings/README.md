@@ -1,4 +1,4 @@
-# 0x06 - Pointers arrays strings 📝
+# 0x07 - Pointers arrays strings 📝
 
 Let's learn C. This is the first step to learning the awesome C programming language.
 
