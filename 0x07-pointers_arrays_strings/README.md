@@ -30,15 +30,16 @@ It is used to create system software that directly interacts with the hardware d
 
 | Filename |
 | ------ |
-| [0-strcat.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/0-memset.c)|
-| [1-strncat.](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/1-memcpy.c)|
-| [2-strncpy.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/2-strncpy.c)|
-| [3-strcmp.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/3-strcmp.c)|
-| [4-rev_array.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/4-rev_array.c)|
-| [5-string_toupper.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/5-string_toupper.c)|
-| [6-cap_string.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/6-cap_string.c)|
-| [7-leet.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/7-leet.c)|
-
+| [0-memset.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/0-memset.c)|
+| [1-memcpy.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/1-memcpy.c)|
+| [2-strchr.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/2-strchr.c)|
+| [3-strspn.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/3-strspn.c)|
+| [4-strpbrk.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/4-strpbrk.c)|
+| [5-strstr.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/5-strstr.c)|
+| [7-print_chessboard.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/7-print_chessboard.c)|
+| [8-print_diagsums.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/8-print_diagsums.c)|
+| [100-set_string.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/100-set_string.c)|
+| [101-crackme_password](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x07-pointers_arrays_strings/101-crackme_password)|
 ## Additional info :construction:
 ### Resources
 
@@ -50,6 +51,6 @@ It is used to create system software that directly interacts with the hardware d
 ### Try It On Your Machine computer:	
 ```bash
 git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
-cd 0x06-pointers_arrays_strings
+cd 0x07-pointers_arrays_stringss
 gcc -Wall FILENAME.c
 ```
