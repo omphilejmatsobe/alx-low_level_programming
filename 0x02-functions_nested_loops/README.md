@@ -42,15 +42,18 @@ It is used to create system software that directly interacts with the hardware d
 
 | Filename |
 | ------ |
-| [0-preprocessor](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)|
-| [1-compiler](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler)|
-| [2-assembler](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/2-assembler)|
-| [3-name](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/3-name)|
-| [4-puts.c](https://github.com//omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/4-puts.c)|
-| [5-printf.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/5-printf.c)|
-| [6-size.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c)|
-| [100-intel](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/master/0x00-hello_world/100-intel)|
-| [101-quote.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c)|
+| [0-putchar.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/0-putchar.c)|
+| [1-alphabet.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/1-alphabet.c)|
+| [2-print_alphabet_x10.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/2-print_alphabet_x10.c)|
+| [3-islower.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/3-islower.c)|
+| [4-isalpha.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/4-isalpha.c)|
+| [5-printf.c]()|
+| [6-size.c]()|
+| [100-intel](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/100-times_table.c)|
+| [101-natural.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c)|
+| [102-fibonacci.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c)|
+| [103-fibonacci.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c)|
+| [104-fibonacci.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x02-functions_nested_loops/104-fibonacci.c)|
 
 ## Additional info :construction:
 ### Resources
@@ -63,7 +66,7 @@ It is used to create system software that directly interacts with the hardware d
 ### Try It On Your Machine computer:	
 ```bash
 git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
-cd 0x00-hello_world
+cd 0x02-functions_nested_loops
 gcc -Wall FILENAME.c
 ```
 
