@@ -27,23 +27,22 @@ It is used to create system software that directly interacts with the hardware d
 7. Function that encodes a string into 1337.
 8. Function that encodes a string using rot13.
 9. Function that prints an integer.
+11. Function that adds two numbers.
+12. Function that prints a buffer. 
 
 
 ## Results :chart_with_upwards_trend:
 
 | Filename |
 | ------ |
-| [0-reset_to_98.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/0-reset_to_98.c)|
-| [1-swap.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/1-swap.c)|
-| [2-strlen.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/2-strlen.c)|
-| [3-puts.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/3-puts.c)|
-| [4-print_rev.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/4-print_rev.c)|
-| [5-rev_string.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/5-rev_string.c)|
-| [6-puts2.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/6-puts2.c)|
-| [7-puts_half.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/7-puts_half.c)|
-| [8-print_array.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/8-print_array.c)|
-| [9-strcpy.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/9-strcpy.c)|
-| [100-atoi.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/100-atoi.c)|
+| [0-strcat.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/0-strcat.c)|
+| [1-strncat.](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/1-strncat.c)|
+| [2-strncpy.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/2-strncpy.c)|
+| [3-strcmp.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/3-strcmp.c)|
+| [4-rev_array.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/4-rev_array.c)|
+| [5-string_toupper.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/5-string_toupper.c)|
+| [6-cap_string.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/6-cap_string.c)|
+| [7-leet.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/7-leet.c)|
 
 ## Additional info :construction:
 ### Resources
@@ -56,6 +55,6 @@ It is used to create system software that directly interacts with the hardware d
 ### Try It On Your Machine computer:	
 ```bash
 git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
-cd 0x05-pointers_arrays_strings
+cd 0x06-pointers_arrays_strings
 gcc -Wall FILENAME.c
 ```
