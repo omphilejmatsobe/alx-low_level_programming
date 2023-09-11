@@ -47,7 +47,6 @@ It is used to create system software that directly interacts with the hardware d
 | [6-size.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c)|
 | [100-intel](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/master/0x00-hello_world/100-intel)|
 | [101-quote.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c)|
-| [0-line.py](https://google.com)|
 
 ## Additional info :construction:
 ### Resources
