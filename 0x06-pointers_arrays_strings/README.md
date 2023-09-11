@@ -27,8 +27,7 @@ It is used to create system software that directly interacts with the hardware d
 7. Function that encodes a string into 1337.
 8. Function that encodes a string using rot13.
 9. Function that prints an integer.
-10. <a href="doc:introduction" target="_blank">Introduction</a>
-11. Program that generates random valid passwords for the program 101-crackme
+
 
 ## Results :chart_with_upwards_trend:
 
