@@ -62,7 +62,7 @@ It is used to create system software that directly interacts with the hardware d
 ### Try It On Your Machine computer:	
 ```bash
 git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
-cd 0x02-functions_nested_loops
+cd 0x04-more_functions_nested_loops
 gcc -Wall FILENAME.c
 ```
 
