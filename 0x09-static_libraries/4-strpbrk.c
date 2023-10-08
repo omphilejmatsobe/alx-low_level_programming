@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - searches a string 
+ * _strpbrk - searches a string
  *
  * @s: input
  * @accept: input
@@ -10,6 +10,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int x;
+
 	while (*s)
 	{
 		for (x = 0; accept[x]; x++)
