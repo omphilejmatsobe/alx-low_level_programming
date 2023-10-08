@@ -14,7 +14,10 @@ It is used to create system software that directly interacts with the hardware d
   
 ## Tasks :heavy_check_mark:
 
-0. library libmy.a containing all the functions listed below:
+0. library libmy.a containing all the functions listed below.
+1. Script that creates a static library called liball.a from all the .c
+
+```
    int _putchar(char c);
    int _islower(int c);int _isalpha(int c);
    int _abs(int n);int _isupper(int c);int _isdigit(int c);int _strlen(char *s);
@@ -31,8 +34,7 @@ It is used to create system software that directly interacts with the hardware d
    unsigned int _strspn(char *s, char *accept);
    char *_strpbrk(char *s, char *accept);
    char *_strstr(char *haystack, char *needle);
-
-1. Script that creates a static library called liball.a from all the .c
+```
 
 ## Results :chart_with_upwards_trend:
 
