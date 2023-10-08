@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <math.h>
 /**
- * _atoi - write a function that convert a string an integer
+ * _atoi - function that converts a string to an integer
  *
  * @s: string to be converted into integer
  * Return: interger output of a converted string
