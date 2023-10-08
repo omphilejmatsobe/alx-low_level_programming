@@ -3,6 +3,8 @@
 
 /**
  * main - program that prints that prints its name.
+ * @argc: number of arguments
+ * @argv: pointers to the array of the strings of the arguments
  *
  * Return: 0 if success.
  */
