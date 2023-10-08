@@ -1,5 +1,9 @@
 #include "stdlib.h"
 #include "stdio.h"
+#include "ctype.h"
+
+int check_int(char *s);
+
 /**
  * main - adds positive numebers
  * @argc: number of arguments
@@ -19,9 +23,8 @@ int main(int argc, char *argv[])
 
 	for (check = 1; check < argc; check++)
 	{
-		if (atoi(argv[check]) == 0)
+		if(check_int(argv[check]) == 1)
 		{
-			printf("Error\n");
 			return (1);
 		}
 
@@ -29,5 +32,25 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", x);
+	return (0);
+}
+/**
+ * check_int - checks if input has only digits
+ *
+ *
+ */
+int check_int(char *s)
+{
+	int x;
+
+	for (x = 0; s[x] != '\0'; x++)
+	{
+		if(!isdigit(s[x]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
+
 	return (0);
 }
