@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	for (check = 1; check < argc; check++)
 	{
-		if(check_int(argv[check]) == 1)
+		if (check_int(argv[check]) == 1)
 		{
 			return (1);
 		}
@@ -36,8 +36,9 @@ int main(int argc, char *argv[])
 }
 /**
  * check_int - checks if input has only digits
+ * @s: input string
  *
- *
+ * Return: 0 if success, 1 if Error.
  */
 int check_int(char *s)
 {
@@ -45,7 +46,7 @@ int check_int(char *s)
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		if(!isdigit(s[x]))
+		if (!isdigit(s[x]))
 		{
 			printf("Error\n");
 			return (1);
