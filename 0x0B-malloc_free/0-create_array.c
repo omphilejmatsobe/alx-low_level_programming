@@ -4,11 +4,10 @@
  * @size: size of the array
  * @c: chracter to initialize the array with
  *
- * Return: the array if successful, Null if not 
+ * Return: the array if successful, Null if not
  */
 char *create_array(unsigned int size, char c)
 {
-
 	unsigned int i;
 	char *arr = malloc(size * sizeof(char));
 
@@ -22,5 +21,5 @@ char *create_array(unsigned int size, char c)
 		arr[i] = c;
 	}
 
-	return(arr);
+	return (arr);
 }
