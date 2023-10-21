@@ -2,7 +2,7 @@
 /**
  * create_array - makes an array of a specific size
  * @size: size of the array
- * @@c: chracter to initialize the array with
+ * @c: chracter to initialize the array with
  *
  * Return: the array if successful, Null if not 
  */
