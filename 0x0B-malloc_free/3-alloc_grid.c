@@ -4,7 +4,7 @@
  * @width: the input integer for the width
  * @height: the input integer for the height
  *
- * Returns: A to dimensional array of integers 
+ * Returns: A to dimensional array of integers
  */
 int **alloc_grid(int width, int height)
 {
@@ -15,7 +15,6 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	arr = malloc(sizeof(int *) * height);
-
 	if (arr == NULL)
 	{
 		free(arr);
@@ -25,8 +24,7 @@ int **alloc_grid(int width, int height)
 	for (x = 0; x < height; x++)
 	{
 		arr[x] = malloc(sizeof(int) * width);
-
-		if(arr[x] == NULL)
+		if (arr[x] == NULL)
 		{
 			z = x;
 
@@ -35,9 +33,7 @@ int **alloc_grid(int width, int height)
 				free(arr[z]);
 				z--;
 			}
-
 			free(arr);
-
 			return (NULL);
 		}
 
@@ -47,6 +43,5 @@ int **alloc_grid(int width, int height)
 			arr[x][y] = 0;
 		}
 	}
-
 	return (arr);
 }
