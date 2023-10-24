@@ -36,5 +36,7 @@ char *str_concat(char *s1, char *s2)
 	for (z = 0; z < y; z++)
 		arr[z + x] = s2[z];
 
+	arr[x + y + 1] = '\0';
+
 	return (arr);
 }
