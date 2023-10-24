@@ -21,14 +21,14 @@ char *_strdup(char *str)
 
 	arr = malloc(sizeof(char) * x);
 
-	for (y = 0; y < x; y++)
-	{
-		arr[y] = str[y];
-	}
-
 	if (arr == NULL)
 	{
 		return (NULL);
+	}
+	
+	for (y = 0; y < x; y++)
+	{
+		arr[y] = str[y];
 	}
 
 	return (arr);
