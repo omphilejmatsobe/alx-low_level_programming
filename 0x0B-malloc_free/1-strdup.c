@@ -12,23 +12,31 @@ char *_strdup(char *str)
 	char *arr;
 	unsigned int x, y;
 
-	x = strlen(str);
+	x = 0;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	arr = malloc(sizeof(char) * (x + 1));
+	for (y = 0; str[y] != '\0'; y++)
+	{
+		x++;
+	}
+
+	arr = malloc(sizeof(char) * x);
+
+	y = 0;
+	
+	while(y < x)
+	{
+		arr[y] = str[y];
+		y++;
+	}
 
 	if (arr == NULL)
 	{
 		return (NULL);
-	}
-	
-	for (y = 0; y < x; y++)
-	{
-		arr[y] = str[y];
 	}
 
 	return (arr);
