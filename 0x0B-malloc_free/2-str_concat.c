@@ -12,11 +12,18 @@ char *str_concat(char *s1, char *s2)
 	char *arr;
 	unsigned int x, y, z;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 
-	x = strlen(s1);
-	y = strlen(s2);
+	if (s1 == NULL)
+		x = 0;
+	else
+		x = strlen(s1);
+
+	if (s2 == NULL)
+		y = 0;
+	else
+		y = strlen(s2);
 
 	arr = malloc(sizeof(char) * (x + y));
 
