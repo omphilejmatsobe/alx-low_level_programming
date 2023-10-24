@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strdup - creates a copy of the string given as a parameter
  * @str: the input string
@@ -11,7 +12,7 @@ char *_strdup(char *str)
 	char *arr;
 	unsigned int x, y;
 
-	x = sizeof(str);
+	x = strlen(str);
 	arr = malloc(x);
 
 	if (x == 0 || arr == NULL)
