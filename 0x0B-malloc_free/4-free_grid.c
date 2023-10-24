@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * free_grid - frees a 2 dimensional grid
- * @*grid: input grid
- * @height: the input height 
+ * @grid: input 2D array grid
+ * @height: the input height
  *
  * Return: none
  */
