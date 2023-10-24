@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * _strdup - creates a copy of the string given as a parameter
  * @str: the input string
