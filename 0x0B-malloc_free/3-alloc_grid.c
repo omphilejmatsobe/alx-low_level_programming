@@ -4,7 +4,7 @@
  * @width: the input integer for the width
  * @height: the input integer for the height
  *
- * Returns: A to dimensional array of integers
+ * Return: A to dimensional array of integers
  */
 int **alloc_grid(int width, int height)
 {
