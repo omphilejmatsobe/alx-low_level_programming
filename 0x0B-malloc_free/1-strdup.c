@@ -11,13 +11,14 @@ char *_strdup(char *str)
 	char *arr;
 	unsigned int x, y;
 
-	if (str == NULL)
+	x = sizeof(str);
+	arr = malloc(x);
+
+	if (x = 0 || arr == NULL)
 	{
 		return (NULL);
 	}
 
-	x = sizeof(str);
-	arr = malloc(x);
 	for (y = 0; y < x; y++)
 	{
 		arr[y] = str[y];
