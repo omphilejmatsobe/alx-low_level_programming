@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	x = strlen(str);
 	arr = malloc(x);
 
-	if (x == 0 || arr == NULL)
+	if (x == 0)
 	{
 		return (NULL);
 	}
@@ -23,6 +23,11 @@ char *_strdup(char *str)
 	for (y = 0; y < x; y++)
 	{
 		arr[y] = str[y];
+	}
+
+	if (arr == NULL)
+	{
+		return (NULL);
 	}
 
 	return (arr);
