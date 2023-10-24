@@ -25,17 +25,16 @@ char *_strdup(char *str)
 
 	arr = malloc(sizeof(char) * (x + 1));
 
-	y = 0;
-	
+	if (arr == NULL)
+	{
+		return (NULL);
+	}
+	y = 0
+
 	while(y < x)
 	{
 		arr[y] = str[y];
 		y++;
-	}
-
-	if (arr == NULL)
-	{
-		return (NULL);
 	}
 
 	return (arr);
