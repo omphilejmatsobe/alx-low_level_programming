@@ -13,12 +13,13 @@ char *_strdup(char *str)
 	unsigned int x, y;
 
 	x = strlen(str);
-	arr = malloc(x);
 
 	if (x == 0)
 	{
 		return (NULL);
 	}
+
+	arr = malloc(x);
 
 	for (y = 0; y < x; y++)
 	{
