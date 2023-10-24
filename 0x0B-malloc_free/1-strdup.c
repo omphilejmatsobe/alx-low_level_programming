@@ -29,9 +29,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	y = 0
 
-	while(y < x)
+	y = 0;
+
+	while (y < x)
 	{
 		arr[y] = str[y];
 		y++;
