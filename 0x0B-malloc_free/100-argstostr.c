@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (x = 1; x < ac; x++)
+	for (x = 0; x < ac; x++)
 	{
 		totalSpace += (int)strlen(av[x]);
 	}
@@ -32,7 +32,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (x = 1; x < ac; x++)
+	for (x = 0; x < ac; x++)
 	{
 		for (y = 0; y < (int)strlen(av[x]); y++)
 		{
