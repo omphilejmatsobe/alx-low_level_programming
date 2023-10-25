@@ -6,7 +6,7 @@
  * @av: argument array.
  *
  *
- * Return:
+ * Return: the array of the concatenated string
  */
 char *argstostr(int ac, char **av)
 {
@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 		totalSpace += (int)strlen(av[x]);
 	}
 
-	arr = malloc(sizeof(char) * totalSpace + (ac - 1));
+	arr = malloc(sizeof(char) * totalSpace + ac);
 
 	if (arr == NULL)
 	{
