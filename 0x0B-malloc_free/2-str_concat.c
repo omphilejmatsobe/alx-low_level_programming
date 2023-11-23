@@ -10,37 +10,33 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *arr;
-	unsigned int x, sizeOne, sizeTwo;
-
-	sizeOne = strlen(s1);
-	sizeTwo = strlen(s2);
-	x = 0;
+	unsigned int x;
 
 	if (s1 == NULL)
 	{
-		sizeOne = 0;
+		s1 = "";
 	}
-	else if (s2 == NULL)
+	if (s2 == NULL)
 	{
-		sizeTwo = 0;
+		s2 = "";
 	}
 
-	arr = malloc((sizeOne + sizeTwo + 1) * sizeof(char));
+	arr = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
 
-	for (x = 0; x < sizeOne; x++)
+	for (x = 0; x < strlen(s1); x++)
 	{
 		arr[x] = s1[x];
 	}
 
-	for (x = 0; x < sizeTwo; x++)
+	for (x = 0; x < strlen(s2); x++)
 	{
 		arr[strlen(s1) + x] = s2[x];
 	}
 
-	arr[sizeOne + sizeTwo] = '\0';
+	arr[strlen(s1) + strlen(s2)] = '\0';
 	return (arr);
 }
