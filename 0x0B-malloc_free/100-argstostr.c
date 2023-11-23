@@ -22,14 +22,14 @@ char *argstostr(int ac, char **av)
 
 	for (x = 0; x < ac; x++)
 	{
-		size = strlen(av[x]);
+		size += strlen(av[x]);
 	}
 
 	arr = malloc(size * sizeof(char *) + ac);
 	if (arr == NULL)
 		return (NULL);
 
-	x = size = 0;
+	size = 0;
 
 	for (x = 0; x < ac; x++)
 	{
