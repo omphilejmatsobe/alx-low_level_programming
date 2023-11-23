@@ -10,28 +10,30 @@
 char *argstostr(int ac, char **av)
 {
 	char *arr;
-	int x, size;
+	int x, size, line;
 	long unsigned int y;
 
-	x = size = 0;
+	x = size = line = 0;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
-	arr = malloc(ac * sizeof(char *));
+	arr = malloc(ac * sizeof(char *) + ac);
 	if (arr == NULL)
 		return (NULL);
 
-	for (x = 1; x < ac; x++)
+	for (x = 0; x < ac; x++)
 	{
-		for (y = 0; y < strlen(av[x]); y++)
+		for (y = 0; y < (strlen(av[x])); y++)
 		{
 			arr[size + y] = av[x][y];
 		}
 
-		size += strlen(av[x]);
+		arr[size + y] = '\n';
+
+		size += (strlen(av[x]) + 1);
 	}
 	return (arr);
 }
