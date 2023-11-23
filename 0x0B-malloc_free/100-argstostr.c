@@ -11,7 +11,7 @@ char *argstostr(int ac, char **av)
 {
 	char *arr;
 	int x, size, line;
-	long unsigned int y;
+	unsigned long int y;
 
 	x = size = line = 0;
 
