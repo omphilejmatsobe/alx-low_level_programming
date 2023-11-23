@@ -14,7 +14,6 @@ char *str_concat(char *s1, char *s2)
 
 	sizeOne = strlen(s1);
 	sizeTwo = strlen(s2);
-
 	x = 0;
 
 	if (s1 == NULL && s2 == NULL)
@@ -29,7 +28,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		sizeTwo = 0;
 	}
-
 
 	arr = malloc((sizeOne + sizeTwo + 1) * sizeof(char));
 	if (arr == NULL)
@@ -48,6 +46,5 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	arr[sizeOne + sizeTwo] = '\0';
-
 	return (arr);
 }
