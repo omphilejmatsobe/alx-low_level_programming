@@ -17,13 +17,11 @@ char **strtow(char *str)
 	countArr = count(str);
 	countIdx = countIndex(countArr, str);
 
-	printf(" %d \n",countArr[0]);
-
 	arr = malloc((countArr[0] * sizeof(char *)) + sizeof(char));
 	if (arr == NULL)
 		return (NULL);
 
-	for (x = 1; x < countArr[0]; x++)
+	for (x = 1; x <= countArr[0]; x++)
 	{
 		arr[x - 1] = malloc((countIdx[x - 1] * sizeof(char)) + sizeof(char));
 		if (arr[x - 1] == NULL)
@@ -38,7 +36,7 @@ char **strtow(char *str)
 		}
 
 		z = 0;
-		for (y = countArr[x]; str[y] != ' ' || str[y] != '\0'; y++)
+		for (y = countArr[x]; str[y] != ' ' && str[y] != '\0'; y++)
 		{
 			arr[x - 1][z] = str[y];
 			z++;
@@ -58,44 +56,43 @@ char **strtow(char *str)
  */
 int *count(char *str)
 {
-	int *count, total, start, flag, x;
+	int *count, total, start, flag, x, counter;
 
 	flag = 0;
 	total = start = 0;
 	for (x = 0; str[x] != '\0'; x++)
 	{
-		if (str[x] != ' ' || str[x] != '\0')
+		if (str[x] != ' ')
 		{
 			if (flag == 0)
 			{
 				total++;
 				flag = 1;
 			}
-			if (str[x + 1] == ' ' || str[x + 1] == '\0')
-				flag = 0;
 		}
+		else
+			flag = 0;
 	}
 
 	count = malloc((total + 1) * sizeof(int));
 	if (count == NULL)
 		return (NULL);
 
+	count[0] = total;
+	counter = 0;
 	for (x = 0; str[x] != '\0'; x++)
 	{
-		if (str[x] != ' ' || str[x] != '\0')
+		if (str[x] != ' ')
 		{
 			if (flag == 0)
 			{
-				total++;
-				start = x;
+				counter++;
 				flag = 1;
-
-				count[0] = total;
-				count[total] = start;
+				count[counter] = x;
 			}
-			if (str[x + 1] == ' ' || str[x + 1] == '\0')
-				flag = 0;
 		}
+		else
+			flag = 0;
 	}
 	return (count);
 }
@@ -117,11 +114,10 @@ int *countIndex(int *countArr, char *str)
 	for (x = 1; x <= countArr[0]; x++)
 	{
 		total = 0;
-		for (y = countArr[x]; str[y] != ' ' || str[y] != '\0'; y++)
+		for (y = countArr[x]; str[y] != ' ' && str[y] != '\0'; y++)
 			total++;
 
 		count[x - 1] = total;
 	}
-
 	return (count);
 }
