@@ -20,7 +20,7 @@ char **strtow(char *str)
 	if (countArr <= 0)
 		return (NULL);
 
-	arr = malloc((countArr * sizeof(char *)) + sizeof(char *));
+	arr = malloc((countArr + 1) * sizeof(char *));
 	if (arr == NULL)
 	{
 		return (NULL);
@@ -68,8 +68,6 @@ char **strtow(char *str)
 	}
 
 	arr[x] = NULL;
-	free(arr[x]);
-
 	return (arr);
 }
 /**
