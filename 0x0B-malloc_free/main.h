@@ -9,5 +9,5 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
-int *count(char *str);
-int *countIndex(int *countArr, char *str);
+int count(char *str);
+int countIndex(int countArr, int limit, char *str);

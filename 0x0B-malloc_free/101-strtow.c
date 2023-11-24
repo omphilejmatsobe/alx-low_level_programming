@@ -9,49 +9,66 @@
 char **strtow(char *str)
 {
 	char **arr;
-	int *countArr, *countIdx, x, y, z;
+	int countArr, countIdx, end, x, y, total, totalIdx, flag;
+
+	total = flag = 0;
 
 	if (str == NULL || strlen(str) == 0)
 		return (NULL);
 
 	countArr = count(str);
-	countIdx = countIndex(countArr, str);
-
-	if (countArr[0] == 0 || countIdx == NULL)
-		return NULL;
-
-	arr = malloc((countArr[0] * sizeof(char *)) + sizeof(char));
-	if (arr == NULL)
+	if (countArr <= 0)
 		return (NULL);
 
-	for (x = 1; x <= countArr[0]; x++)
+	arr = malloc((countArr * sizeof(char *)) + sizeof(char *));
+	if (arr == NULL)
 	{
-		arr[x - 1] = malloc((countIdx[x - 1] * sizeof(char)) + sizeof(char));
-		if (arr[x - 1] == NULL)
+		return (NULL);
+	}
+
+	for (x = 0; x < countArr; x++)
+	{
+		total = totalIdx = 0;
+		flag = end = 0;
+		countIdx = countIndex(countArr, (x + 1), str);
+		arr[x] = malloc((countIdx + 1) * sizeof(char));
+		if (arr[x] == NULL)
 		{
-			while ((x - 1) >= 0)
+			while (x >= 0)
 			{
-				free(arr[x - 1]);
+				free(arr[x]);
 				x--;
 			}
 			free(arr);
 			return (NULL);
 		}
-		z = 0;
-		for (y = countArr[x]; str[y] != ' ' && str[y] != '\0'; y++)
+		for (y = 0; str[y] != '\0' && end != 1; y++)
 		{
-			arr[x - 1][z] = str[y];
-			z++;
+			if (str[y] != ' ')
+			{
+				if (flag == 0)
+				{
+					total++;
+					flag = 1;
+				}
+				
+				if (total == (x + 1) && totalIdx < countIdx)
+				{
+					arr[x][totalIdx] = str[y];
+					totalIdx++;
+				}
+			}
+			else
+				flag = 0;
+
+			if (total > (x + 1))
+				end = 1;
 		}
-		arr[x - 1][z] = '\0';
+		arr[x][y] = '\0';
 	}
 
-	arr[countArr[0]] = '\0';
-
-	free(countArr);
-	free(count(str));
-	free(countIdx);
-	free(countIndex(countArr, str));
+	arr[x] = NULL;
+	free(arr[x]);
 
 	return (arr);
 }
@@ -61,12 +78,12 @@ char **strtow(char *str)
  *
  * Return: the number of words in a string
  */
-int *count(char *str)
+int count(char *str)
 {
-	int *count, total, start, flag, x, counter;
+	int total, flag, x;
 
 	flag = 0;
-	total = start = 0;
+	total = 0;
 	for (x = 0; str[x] != '\0'; x++)
 	{
 		if (str[x] != ' ')
@@ -81,29 +98,7 @@ int *count(char *str)
 			flag = 0;
 	}
 
-	count = malloc((total + 1) * sizeof(int));
-	if (count == NULL)
-		return (NULL);
-
-	count[0] = total;
-	counter = 0;
-
-	flag = 0;
-	for (x = 0; str[x] != '\0'; x++)
-	{
-		if (str[x] != ' ')
-		{
-			if (flag == 0)
-			{
-				counter++;
-				flag = 1;
-				count[counter] = x;
-			}
-		}
-		else
-			flag = 0;
-	}
-	return (count);
+	return (total);
 }
 
 /**
@@ -113,20 +108,37 @@ int *count(char *str)
  *
  * Return: the number of letters in each word
  */
-int *countIndex(int *countArr, char *str)
+int countIndex(int countArr, int limit, char *str)
 {
-	int *count;
-	int x, y, total;
+	int totalIdx, total, x, y, flag, end;
 
-	count = malloc(countArr[0] * sizeof(int));
-
-	for (x = 1; x <= countArr[0]; x++)
+	totalIdx = x = y = total = 0;
+	for (x = 0; x < countArr; x++)
 	{
-		total = 0;
-		for (y = countArr[x]; str[y] != ' ' && str[y] != '\0'; y++)
-			total++;
+		end = 0;
+		flag = 0;
+		for(y = 0; str[y] != '\0' && end != 1; y++)
+		{
+			if (str[y] != ' ')
+			{
+				if (flag == 0)
+				{
+					flag = 1;
+					total++;
+				}
 
-		count[x - 1] = total;
+				if (total == limit)
+				{
+					totalIdx++;
+				}
+			}
+			else
+				flag = 0;
+
+			if (total > limit)
+				end = 1;
+		}
 	}
-	return (count);
+
+	return (totalIdx);
 }
