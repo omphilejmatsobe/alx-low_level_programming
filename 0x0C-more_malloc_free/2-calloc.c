@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	string = (char *)pointer;
 	for (x = 0; x < (nmemb + size); x++)
 	{
-		string[x] = 0;
+		string[x] = '0';
 	}
 	return (string);
 }
