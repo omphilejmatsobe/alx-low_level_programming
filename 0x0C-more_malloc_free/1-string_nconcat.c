@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		byteSpace = strlen(s2);
 
-	pointer = malloc(sizeof(pointer) * (strlen(s1) + n + 1));
+	pointer = malloc(sizeof(*pointer) * (strlen(s1) + byteSpace + 1));
 	if (pointer == NULL)
 		return (NULL);
 
