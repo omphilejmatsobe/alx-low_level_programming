@@ -17,7 +17,7 @@ char **strtow(char *str)
 	countArr = count(str);
 	countIdx = countIndex(countArr, str);
 
-	if (countArr == NULL || countIdx == NULL)
+	if (countArr[0] == 0 || countIdx == NULL)
 		return NULL;
 
 	arr = malloc((countArr[0] * sizeof(char *)) + sizeof(char));
