@@ -51,7 +51,7 @@ char **strtow(char *str)
 					total++;
 					flag = 1;
 				}
-				
+
 				if (total == (x + 1) && totalIdx < countIdx)
 				{
 					arr[x][totalIdx] = str[y];
@@ -100,8 +100,9 @@ int count(char *str)
 }
 
 /**
- * countIdx - counts all elements of a word
- * @countArr: input arr of the words data (Quantity, etc)
+ * countIndex - counts all elements of a word
+ * @countArr: input max count of words of the words data (Quantity, etc)
+ * @limit: input current number of words
  * @str: the string containing the words
  *
  * Return: the number of letters in each word
@@ -115,7 +116,7 @@ int countIndex(int countArr, int limit, char *str)
 	{
 		end = 0;
 		flag = 0;
-		for(y = 0; str[y] != '\0' && end != 1; y++)
+		for (y = 0; str[y] != '\0' && end != 1; y++)
 		{
 			if (str[y] != ' ')
 			{
