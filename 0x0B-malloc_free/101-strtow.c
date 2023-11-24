@@ -28,8 +28,7 @@ char **strtow(char *str)
 
 	for (x = 0; x < countArr; x++)
 	{
-		total = totalIdx = 0;
-		flag = end = 0;
+		total = totalIdx = flag = end = 0;
 		countIdx = countIndex(countArr, (x + 1), str);
 		arr[x] = malloc((countIdx + 1) * sizeof(char));
 		if (arr[x] == NULL)
