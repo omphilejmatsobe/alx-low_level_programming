@@ -17,8 +17,11 @@ char **strtow(char *str)
 	countArr = count(str);
 	countIdx = countIndex(countArr, str);
 
+	if (countArr == NULL || countIdx == NULL)
+		return NULL;
+
 	arr = malloc((countArr[0] * sizeof(char *)) + sizeof(char));
-	if (countArr[0] == 0 || arr == NULL)
+	if (arr == NULL)
 		return (NULL);
 
 	for (x = 1; x <= countArr[0]; x++)
@@ -34,7 +37,6 @@ char **strtow(char *str)
 			free(arr);
 			return (NULL);
 		}
-
 		z = 0;
 		for (y = countArr[x]; str[y] != ' ' && str[y] != '\0'; y++)
 		{
@@ -47,7 +49,6 @@ char **strtow(char *str)
 	arr[countArr[0]] = '\0';
 	return (arr);
 }
-
 /**
  * count - counts the number of words in a string
  * @str: input string
