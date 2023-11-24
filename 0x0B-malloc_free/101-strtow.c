@@ -47,6 +47,10 @@ char **strtow(char *str)
 	}
 
 	arr[countArr[0]] = '\0';
+
+	free(countArr);
+	free(countIdx);
+
 	return (arr);
 }
 /**
