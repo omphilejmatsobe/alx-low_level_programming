@@ -80,6 +80,8 @@ int *count(char *str)
 
 	count[0] = total;
 	counter = 0;
+
+	flag = 0;
 	for (x = 0; str[x] != '\0'; x++)
 	{
 		if (str[x] != ' ')
