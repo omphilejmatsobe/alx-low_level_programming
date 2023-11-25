@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * arrat_range - creates an array of integers
- * @min: minimum 
+ * array_range - creates an array of integers
+ * @min: minimum
  * @max: maximum
  *
  * Return: pointer to the new array
@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	for (x = 0; x < (max - min); x++)
 		pointer[x] = (x + min);
 
-	if ( max == min)
+	if (max == min)
 		pointer[0] = max;
 
 	return (pointer);
