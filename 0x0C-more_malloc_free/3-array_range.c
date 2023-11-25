@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	for (x = 0; x < (max - min); x++)
-		pointer[x] = (x + (max - min));
+		pointer[x] = (x + min);
 
 	return (pointer);
 }
