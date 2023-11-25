@@ -24,7 +24,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	copy = (char *) ptr;
 
-	for (x = 0; x < old_size; x++)
+	for (x = 0; x < sizeof(ptr); x++)
 	{
 		pointer[x] = copy[x];
 	}
