@@ -3,6 +3,7 @@
 /**
  * malloc_checked - Allocates memory using malloc
  * @b: The size of the memory to be allocated
+ * Return: The pointer to the new allocated memory
  * If fails terminate with status falue of 98.
  */
 void *malloc_checked(unsigned int b)
