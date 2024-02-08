@@ -2,7 +2,7 @@
 
 /**
  * malloc_checked - Allocates memory to a variable.
- * @b: The input variable to be allcocated memory. 
+ * @b: The input variable to be allcocated memory.
  *
  * Return: Pointer to the newly allocated memory.
  * If the program fails it returns Null.
