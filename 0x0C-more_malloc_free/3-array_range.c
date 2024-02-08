@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _array_range - Creates an array of integers.
+ * array_range - Creates an array of integers.
  * @min: minimun elements to included.
  * @max: maximum elements to be included.
  *
@@ -15,7 +15,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	intArray = malloc(sizeof(*intArray) * ((max - min) + 1) );
+	intArray = malloc(sizeof(*intArray) * ((max - min) + 1));
 
 	for (count = 0; count < ((max - min) + 1); count++)
 	{
