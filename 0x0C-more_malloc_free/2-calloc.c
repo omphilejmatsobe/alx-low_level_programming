@@ -10,19 +10,21 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *array;
-
-	array = malloc(0);
+	char *array;
+	unsigned int count;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	array = malloc(nmemb * size);
+	array = malloc(size * nmemb);
 	if (array == NULL)
 	{
 		free(array);
 		return (NULL);
 	}
+
+	for (count = 0; count < (size * nmemb); count++)
+		array[count] = 0;
 
 	return (array);
 }
