@@ -1,4 +1,4 @@
-# 0x0B - malloc_free 📝
+# 0x0C - more_malloc_free 📝
 
 Let's learn C. This is the first step to learning the awesome C programming language.
 
