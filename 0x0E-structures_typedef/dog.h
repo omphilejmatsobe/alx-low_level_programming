@@ -2,6 +2,7 @@
 #define _DOG_
 
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct dog - Entities of a dog.
@@ -19,5 +20,6 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif /* _DOG_ */
