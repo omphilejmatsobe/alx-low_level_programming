@@ -1,7 +1,8 @@
 #include "dog.h"
 
 /**
- * d - Input strct dog_t to be freed.
+ * free_dog - Frees the passed on struct.
+ * @d: Input strct dog_t to be freed.
  *
  * Return: Nothing.
  */
