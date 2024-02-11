@@ -1,6 +1,8 @@
 #ifndef _DOG_
 #define _DOG_
 
+#include <stdlib.h>
+
 /**
  * struct dog - Entities of a dog.
  * @name: The name of the dog.
