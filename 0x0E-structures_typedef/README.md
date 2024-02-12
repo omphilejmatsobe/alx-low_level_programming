@@ -9,9 +9,8 @@ It is used to create system software that directly interacts with the hardware d
 
 ## Learning Objectives :bookmark_tabs:
 
-* What are macros and how to use them.
-* What are the most common predefined macros.
-* How to include guard your header files.
+* What are structures, when, why and how to use them.
+* How to use typedef.
 
 ## Tasks :heavy_check_mark:
 
@@ -28,8 +27,8 @@ It is used to create system software that directly interacts with the hardware d
 | ------ |
 | [dog.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/dog.h)|
 | [1-init_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/1-init_dog.c)|
-| [2-main.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
-| [3-function_like_macro.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [2-print_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/2-print_dog.c)|
+| [dog.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/dog.h)|
 | [4-new_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/4-new_dog.c)|
 | [5-free_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/5-free_dog.c)|
 
