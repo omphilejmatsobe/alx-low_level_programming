@@ -15,21 +15,23 @@ It is used to create system software that directly interacts with the hardware d
 
 ## Tasks :heavy_check_mark:
 
-0. Header file that defines a macro named SIZE as an abbreviation for the token 1024.
-1. Header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
-2. Program that prints the name of the file it was compiled from, followed by a new line.
-3. Function-like macro ABS(x) that computes the absolute value of a number x.
-4. Function-like macro SUM(x, y) that computes the sum of the numbers x and y
+0. New type struct dog.
+1. Function that initializes a variable of type struct dog.
+2. Function that prints a struct dog
+3. New type dog_t as a new name for the type struct dog.
+4. Function that creates a new "dog" instance.
+5. Function that frees "dog" instances.
 
 ## Results :chart_with_upwards_trend:
 
 | Filename |
 | ------ |
-| [0-dog.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
-| [1-pi.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [dog.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/dog.h)|
+| [1-init_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/1-init_dog.c)|
 | [2-main.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
 | [3-function_like_macro.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
-| [4-sum.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [4-new_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/4-new_dog.c)|
+| [5-free_dog.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/5-free_dog.c)|
 
 ## Additional info :construction:
 ### Resources
