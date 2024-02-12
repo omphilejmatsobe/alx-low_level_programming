@@ -43,7 +43,7 @@ It is used to create system software that directly interacts with the hardware d
 ### Try It On Your Machine computer:	
 ```bash
 git clone https://github.com/omphilejmatsobe/alx-low_level_programming.git
-cd 0x0D-preprocessor
+cd 0x0E-structures_typedef
 gcc -Wall FILENAME.c
 ```
 
