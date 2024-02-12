@@ -25,11 +25,11 @@ It is used to create system software that directly interacts with the hardware d
 
 | Filename |
 | ------ |
-| [0-object_like_macro.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0D-preprocessor/0-object_like_macro.h)|
-| [1-pi.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0D-preprocessor/1-pi.h)|
-| [2-main.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0D-preprocessor/main/2-main.c)|
-| [3-function_like_macro.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0D-preprocessor/3-function_like_macro.h)|
-| [4-sum.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0D-preprocessor/4-sum.h)|
+| [0-dog.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [1-pi.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [2-main.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [3-function_like_macro.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
+| [4-sum.h](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x0E-structures_typedef/0-dog.h)|
 
 ## Additional info :construction:
 ### Resources
