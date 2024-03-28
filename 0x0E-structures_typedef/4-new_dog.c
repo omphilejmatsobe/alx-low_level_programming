@@ -56,7 +56,7 @@ char *_strncpy(char *dest, char *src, unsigned int n)
 		dest[x] = src[x];
 	}
 
-	dest[x + 1] = '\0';
+	dest[x] = '\0';
 
 	return (dest);
 }
