@@ -27,6 +27,6 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 char *_strncpy(char *dest, char *src, unsigned int n);
 unsigned int _strlen(char *src);
-
+void free_dog(dog_t *d);
 
 #endif /* _DOG_H_ */
