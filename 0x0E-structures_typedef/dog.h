@@ -1,30 +1,16 @@
-#ifndef _DOG_
-#define _DOG_
-
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * struct dog - Entities of a dog.
- * @name: The name of the dog.
- * @owner: The name of the owner of the dog.
- * @age: The age of the dog.
- *
- * Description: This is a structure to store information about a dog.
+ * struct dog - struct that stores dog object and its attributes
+ * @name: name of dog
+ * @age: number of years the dog lived
+ * @owner: the owner of the dog
  */
 struct dog
 {
 	char *name;
-	char *owner;
 	float age;
+	char *owner;
 };
-
-typedef struct dog dog_t;
-
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-dog_t *new_dog(char *name, float age, char *owner);
-char *_strcpy(char *dest, char *src);
-void free_dog(dog_t *d);
-
-#endif /* _DOG_ */
+#endif /* _DOG_H_ */
