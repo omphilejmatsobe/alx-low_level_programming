@@ -17,24 +17,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = malloc(sizeof(name));
+	dog->name = malloc(strlen(name) + 1);
 	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
-	_strcpy(dog->name, name, strlen(name));
+	_strncpy(dog->name, name, strlen(name));
 
 	dog->age = age;
 
-	dog->owner = malloc(sizeof(owner));
+	dog->owner = malloc(strlen(owner) + 1);
 	if (owner == NULL)
 	{
 		free(dog->name);
 		free(dog);
 		return (NULL);
 	}
-	_strcpy(dog->owner, owner, strlen(owner));
+	_strncpy(dog->owner, owner, strlen(owner));
 
 	return (dog);
 }
@@ -47,7 +47,7 @@ dog_t *new_dog(char *name, float age, char *owner)
  *
  * Return: the copied string.
  */
-char *_strcpy(char *dest, char *src, unsigned int n)
+char *_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int x;
 
@@ -55,6 +55,8 @@ char *_strcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[x] = src[x];
 	}
+
+	dest[x + 1] = '\0';
 
 	return (dest);
 }
