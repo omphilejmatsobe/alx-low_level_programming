@@ -68,11 +68,12 @@ char *_strncpy(char *dest, char *src, unsigned int n)
  *
  * Return: If success the lenth of the string.
  */
-unsigned _strlen(char *src)
+unsigned int _strlen(char *src)
 {
-	unsigned counter;
+	unsigned int counter;
 
-	for (counter = 0; src[counter] != '\0'; counter++);
+	for (counter = 0; src[counter] != '\0'; counter++)
+		;
 
-	return counter;
+	return (counter);
 }
