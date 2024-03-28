@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <string.h>
 
 /**
  * new_dog - Creates a new instance of the struct dog_t.
@@ -17,18 +16,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = malloc(strlen(name) + 1);
+	dog->name = malloc(_strlen(name) + 1);
 	if (dog->name == NULL)
 	{
 		free(dog);
 		free(name);
 		return (NULL);
 	}
-	_strncpy(dog->name, name, strlen(name));
+	_strncpy(dog->name, name, _strlen(name));
 
 	dog->age = age;
 
-	dog->owner = malloc(strlen(owner) + 1);
+	dog->owner = malloc(_strlen(owner) + 1);
 	if (owner == NULL)
 	{
 		free(dog->name);
@@ -37,7 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	_strncpy(dog->owner, owner, strlen(owner));
+	_strncpy(dog->owner, owner, _strlen(owner));
 
 	return (dog);
 }
@@ -58,8 +57,22 @@ char *_strncpy(char *dest, char *src, unsigned int n)
 	{
 		dest[x] = src[x];
 	}
-
 	dest[x] = '\0';
 
 	return (dest);
+}
+
+/**
+ * _strlen - Counts the length of a string.
+ * @src: Input string.
+ *
+ * Return: If success the lenth of the string.
+ */
+unsigned _strlen(char *src)
+{
+	unsigned counter;
+
+	for (counter = 0; src[counter] != '\0'; counter++);
+
+	return counter;
 }
