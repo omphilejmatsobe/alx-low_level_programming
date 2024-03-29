@@ -1,2 +1,1 @@
-
-this is the readme for the 0x0F-function_pointers file
+this is the readme
