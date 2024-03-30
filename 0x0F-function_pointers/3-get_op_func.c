@@ -27,7 +27,7 @@ int (*get_op_func(char *s))(int, int)
 		if (index >= 5)
 		{
 			printf("Error\n");
-			exit(98);
+			exit(99);
 		}
 	}
 
