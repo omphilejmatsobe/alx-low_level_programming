@@ -12,8 +12,9 @@ int op_add(int a, int b)
 	;
 	return (a + b);
 }
+
 /**
- * opt_sub - Calcualtes the difference of two numbers.
+ * op_sub - Calcualtes the difference of two numbers.
  * @a: Input int a.
  * @b: Input int b.
  *
@@ -24,6 +25,7 @@ int op_sub(int a, int b)
 	;
 	return (a - b);
 }
+
 /**
  * op_mul - Calculates the product of two numbers.
  * @a: Input int a.
@@ -33,12 +35,10 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	int res;
-
-	res = a * b;
-
-	return (res);
+	;
+	return (a * b);
 }
+
 /**
  * op_div - Calculates the quotient of two numbers.
  * @a: Input int a.
@@ -56,6 +56,7 @@ int op_div(int a, int b)
 
 	return (a / b);
 }
+
 /**
  * op_mod - Calculates the remainder the quotient of two number, the modulus.
  * @a: Input int a.

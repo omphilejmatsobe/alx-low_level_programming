@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include "string.h"
 /**
  * get_op_func - elects the correct function to perform an operation.
  * @s: Input string of operation character
@@ -11,9 +10,9 @@ int (*get_op_func(char *s))(int, int)
 	int index;
 
 	op_t options[] = {
+		{"*", (*op_mul)},
 		{"+", (*op_add)},
 		{"-", (*op_sub)},
-		{"*", (*op_mul)},
 		{"/", (*op_div)},
 		{"%", (*op_mod)},
 		{NULL, NULL}
@@ -21,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 
 	index = 0;
 
-	while (strcmp(s, options[index].op))
+	while (strcmp(s, options[index].op) != 0)
 	{
 		index++;
 
