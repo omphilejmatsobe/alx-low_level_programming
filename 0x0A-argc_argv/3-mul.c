@@ -14,8 +14,11 @@ int main(int argc, char *argv[])
 	int result = 0;
 	(void) argc;
 
-	if (argc == 3)
-		printf("Error");
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (0);
+	}
 
 	result = atoi(argv[1]) * atoi(argv[2]);
 
