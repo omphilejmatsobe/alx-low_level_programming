@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 #include "stdlib.h"
 
 /**
@@ -8,7 +8,7 @@
  *
  * Return: 0 if success.
  */
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	(void)argc;
 
