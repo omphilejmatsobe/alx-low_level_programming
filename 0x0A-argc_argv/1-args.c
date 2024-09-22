@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "stdlib.h"
+#include <stdlib.h>
 
 /**
- * main - program that prints its name.
+ * main - program that prints number of its arguments.
  * @argc: number of arguments
  * @argv: pointers to the array of the strings of the arguments
  *
@@ -10,8 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
-
-	printf("%s\n", argv[0]);
+	(void) argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
