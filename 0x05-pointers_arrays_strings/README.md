@@ -37,7 +37,7 @@ It is used to create system software that directly interacts with the hardware d
 
 | Filename |
 | ------ |
-| [0-isupper.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/0-isupper.c)|
+| [0-resetto98.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/0-isupper.c)|
 | [1-isdigit.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/1-isdigit.c)|
 | [2-mul.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/2-mul.c)|
 | [3-print_numbers.c](https://github.com/omphilejmatsobe/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/3-print_numbers.c)|
